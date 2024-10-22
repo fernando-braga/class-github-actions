@@ -2,20 +2,17 @@ name: Hello World
 
 # Defines the event that triggers the workflow
 on: 
-
-# Triggers the workflow manually
-workflow_dispatch:
+  # Triggers the workflow manually
+  workflow_dispatch:
 
 # Defines the jobs that will be executed
 jobs:
-
-# Defines the job
+  # Defines the job
   hello:
+    # Defines the execution environment
+    runs-on: ubuntu-latest
 
-# Defines the execution enviroment
-runs-on: ubuntu-latest
-
-# Defines the steps that will be executed
-steps:
-  - name: Ecoar Hello World
-    run: echo "Hello World"
+    # Defines the steps that will be executed
+    steps:
+      - name: Ecoar Hello World
+        run: echo "Hello World"
