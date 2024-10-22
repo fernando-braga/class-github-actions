@@ -13,9 +13,9 @@ jobs:
   hello:
 
 # Defines the execution enviroment
-  runs-on: ubuntu-latest
+runs-on: ubuntu-latest
 
 # Defines the steps that will be executed
-  steps:
+steps:
   - name: Ecoar Hello World
     run: echo "Hello World"
